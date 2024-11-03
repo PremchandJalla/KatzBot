@@ -1,0 +1,31 @@
+# Ignore Python cache and environment files
+__pycache__/
+*.pyc
+*.pyo
+.env
+
+# Ignore IDE and editor-specific files
+.vscode/
+.idea/
+
+# Ignore system files
+.DS_Store
+
+# Ignore API keys and credentials
+api_key.txt
+
+
+# Ignore large directories and files
+finetuned_njit_bot/
+embeddings/
+__pycache__/
+
+# Ignore other large files (adjust as needed)
+*.pt
+*.bin
+*.idx
+*.pkl
+*.safetensors
+*.pth
+
+
