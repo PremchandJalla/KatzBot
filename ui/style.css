@@ -1,0 +1,142 @@
+/* Reset default margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set up the HTML and body to use full height and enable flex layout */
+html, body {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Navbar styling (header acting as navbar) */
+header {
+    background-color: #B22222;
+    width: 100%;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    position: fixed; /* Keeps the header fixed at the top */
+    top: 0;
+    z-index: 1000; /* Ensures it stays above other elements */
+}
+
+/* Main content area to position the chat box centrally */
+.main-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-top: 60px; /* Offset for fixed navbar */
+    padding-bottom: 40px; /* Offset for footer */
+    height: calc(100vh - 120px); /* Ensures full height between header and footer */
+}
+
+/* Chat container styling with medium width and centered placement */
+.chat-container {
+    width: 600px; /* Medium width */
+    max-width: 90%; /* Adjust for smaller screens */
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+/* Chat header styling */
+.chat-header {
+    background-color: #B22222;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+.chat-header h2 {
+    font-size: 1.5em;
+}
+
+/* Chat box styling */
+.chat-box {
+    height: 400px;
+    padding: 15px;
+    overflow-y: auto;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Message bubble styling */
+.message {
+    margin-bottom: 15px;
+}
+
+.user-message {
+    align-self: flex-end;
+    background-color: #B22222;
+    color: white;
+    padding: 8px;
+    border-radius: 8px;
+    max-width: 75%;
+    text-align: right;
+}
+
+.bot-message {
+    align-self: flex-start;
+    background-color: #f1f1f1;
+    padding: 8px;
+    border-radius: 8px;
+    max-width: 75%;
+    color: #333;
+}
+
+/* Chat input container styling */
+.chat-input-container {
+    display: flex;
+    padding: 10px;
+    background-color: #fff;
+    border-top: 1px solid #ddd;
+}
+
+.chat-input-container input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.chat-input-container button {
+    background-color: #B22222;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    margin-left: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.chat-input-container button:hover {
+    background-color: #8B0000;
+}
+
+/* Footer styling to stay at the bottom */
+footer {
+    text-align: center;
+    background-color: #B22222;
+    color: white;
+    padding: 5px;
+    width: 100%;
+    position: fixed; /* Keeps footer fixed at the bottom */
+    bottom: 0;
+    font-size: 0.9em;
+}
