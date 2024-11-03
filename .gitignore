@@ -29,3 +29,5 @@ __pycache__/
 *.pth
 
 
+finetuned_njit_bot/checkpoint-438/model.safetensors
+
