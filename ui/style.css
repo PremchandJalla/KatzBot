@@ -5,16 +5,14 @@
     box-sizing: border-box;
 }
 
-/* Set up the HTML and body to use full height and enable flex layout */
+/* Background image styling directly on body */
 html, body {
     height: 100%;
     font-family: Arial, sans-serif;
-    background-color: #f8f8f8;
     color: #333;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    background: url('images/homecoming-5.jpg') no-repeat center center fixed; /* Adjusted relative path */
+    background-size: cover; /* Ensures the image covers the entire viewport */
+    background-color: #f8f8f8; /* Fallback color in case the image doesn’t load */
 }
 
 /* Navbar styling (header acting as navbar) */
@@ -24,28 +22,26 @@ header {
     color: white;
     padding: 10px 0;
     text-align: center;
-    position: fixed; /* Keeps the header fixed at the top */
+    position: fixed;
     top: 0;
-    z-index: 1000; /* Ensures it stays above other elements */
+    z-index: 1000;
 }
 
 /* Main content area to position the chat box centrally */
 .main-content {
-    flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100vh; /* Full viewport height to center content */
     width: 100%;
     padding-top: 60px; /* Offset for fixed navbar */
-    padding-bottom: 40px; /* Offset for footer */
-    height: calc(100vh - 120px); /* Ensures full height between header and footer */
 }
 
-/* Chat container styling with medium width and centered placement */
+/* Chat container styling with centered placement and semi-transparent background */
 .chat-container {
-    width: 600px; /* Medium width */
-    max-width: 90%; /* Adjust for smaller screens */
-    background-color: #fff;
+    width: 400px;
+    max-width: 90%;
+    background-color: rgba(255, 255, 255, 0.9); /* Slight transparency for readability */
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     overflow: hidden;
@@ -60,10 +56,12 @@ header {
     color: #fff;
     padding: 10px;
     text-align: center;
+    border-radius: 8px 8px 0 0;
 }
 
 .chat-header h2 {
     font-size: 1.5em;
+    margin: 0;
 }
 
 /* Chat box styling */
@@ -136,7 +134,7 @@ footer {
     color: white;
     padding: 5px;
     width: 100%;
-    position: fixed; /* Keeps footer fixed at the bottom */
+    position: fixed;
     bottom: 0;
     font-size: 0.9em;
 }

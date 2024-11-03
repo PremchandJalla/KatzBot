@@ -5,26 +5,42 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Highlander Bot</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    /* Inline style for testing */
+    html, body {
+        height: 100%;
+        background: url('homecoming-5.jpg') no-repeat center center fixed;
+        background-size: cover;
+        background-color: #f8f8f8; /* Fallback color */
+    }
+  </style>
 </head>
 <body>
   <header>
     <h1>HACKNJIT2024</h1>
   </header>
-  <div class="chat-container">
-    <div class="chat-header">
-      <h2>Highlander Bot</h2>
+  
+  <main class="main-content">
+    <div class="chat-container">
+      <div class="chat-header">
+        <h2>Highlander Bot</h2>
+      </div>
+      <div class="chat-box" id="chat-box">
+        <!-- Pre-populated welcome message -->
+        <p><strong>**Hey There, Friend!**</strong></p>
+        <p>Welcome to the NJIT Highlander Bot, your friendly guide to all things NJIT! How can I assist you today?</p>
+      </div>
+      <div class="chat-input-container">
+        <input type="text" id="user-input" placeholder="Ask Highlander Bot something..." />
+        <button onclick="sendMessage()">Send</button>
+      </div>
     </div>
-    <div class="chat-box" id="chat-box">
-      <!-- Chat messages will be added here dynamically -->
-    </div>
-    <div class="chat-input-container">
-      <input type="text" id="user-input" placeholder="Ask Highlander Bot something..." />
-      <button onclick="sendMessage()">Send</button>
-    </div>
-  </div>
+  </main>
+
   <footer>
     <p>© Premchand Jalla and Sai Leela Kuragayala</p>
   </footer>
+
   <script src="script.js"></script>
 </body>
 </html>
