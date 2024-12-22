@@ -167,6 +167,8 @@ This structured approach ensures a fast, accurate, and user-friendly experience 
 
 ![image](https://github.com/user-attachments/assets/514919f4-8301-4671-915a-ac4ba535d634)
 
+
+
 ### Response for a stop word 
 
 ![image](https://github.com/user-attachments/assets/0ee763a0-c4dc-4210-9045-ba06ad7d09d7)
