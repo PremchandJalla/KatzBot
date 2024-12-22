@@ -160,40 +160,5 @@ This architecture flow allows the yeshiva  Bot to:
 This structured approach ensures a fast, accurate, and user-friendly experience tailored to the needs of yeshiva students, faculty, and prospective students.
 
 
-## Chatbot Application Snapshots
-
-### Home page 
-
-
-![image](https://github.com/user-attachments/assets/514919f4-8301-4671-915a-ac4ba535d634)
-
-
-
-### Response for a stop word 
-
-![image](https://github.com/user-attachments/assets/0ee763a0-c4dc-4210-9045-ba06ad7d09d7)
-
-### Response for data not present in data base 
-
-![image](https://github.com/user-attachments/assets/1b33a65b-96f4-4e2c-9554-070ac2a0fefe)
-
-
-
-### Response for question from converstion log 
-
-![image](https://github.com/user-attachments/assets/f7e61737-1aa0-4f5d-8069-310dfb3071d6)
-
-![image](https://github.com/user-attachments/assets/582ab704-fbc9-4395-9842-f6d2c0f8b4b0)
-
-### Response for Pre defined question 
-
-![image](https://github.com/user-attachments/assets/3a933310-4db5-40fd-ab1d-6072a26f3fe2)
-
-![image](https://github.com/user-attachments/assets/6db6835a-711a-450d-b5fe-26d6ecb86787)
-
-
-
-
-
-
+=
 
